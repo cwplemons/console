@@ -1,3 +1,7 @@
+//Yamaha YM3812 Library 
+//Developed by Cameron Plemons
+//Email: cw.plemons@gmail.com
+
 #define REG_LATCH 2
 #define REG_CLK 3
 #define REG_DATA 4
@@ -15,5 +19,8 @@
 #define YM_CS 21
 
 void setup() {
-  int outputs[] = {REG_CLK};
-}
+  int outputs[] = {REG_LATCH, REG_CLK, REG_DATA};
+  for (int i = 0; int < 3, int++) {
+    pinMode(i, OUTPUT);
+  };
+};
