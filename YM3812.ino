@@ -20,8 +20,11 @@
 
 void setup() {
   int inputs[] = {SPI_MOSI};
-  int outputs[] = {REG_LATCH, REG_CLK, REG_DATA, SPI_CS, SPI_MISO, SPI_CLK};
-  for (int i = 0; int < 6, int++) {
+  int outputs[] = {REG_LATCH, REG_CLK, REG_DATA, SPI_CS, SPI_MISO, SPI_CLK, YM_IRQ, YM_IC, YM_A0, WR_WR, YM_RD, YM_CS};
+  for (int i = 0; int < 1, int++) {
+    pinMode(i, INPUT);
+  };
+  for (int i = 0; int < 12, int++) {
     pinMode(i, OUTPUT);
   };
 };
