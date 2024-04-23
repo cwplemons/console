@@ -19,8 +19,9 @@
 #define YM_CS 21
 
 void setup() {
-  int outputs[] = {REG_LATCH, REG_CLK, REG_DATA};
-  for (int i = 0; int < 3, int++) {
+  int inputs[] = {SPI_MOSI};
+  int outputs[] = {REG_LATCH, REG_CLK, REG_DATA, SPI_CS, SPI_MISO, SPI_CLK};
+  for (int i = 0; int < 6, int++) {
     pinMode(i, OUTPUT);
   };
 };
