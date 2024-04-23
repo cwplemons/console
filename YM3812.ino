@@ -1,5 +1,5 @@
 #define REG_LATCH 2
-#define REG_CLOCK 3
+#define REG_CLK 3
 #define REG_DATA 4
 
 #define SPI_CS 10
