@@ -6,7 +6,6 @@ time_out = ((time_in[0]+8)-12, time_in[1])
 
 def process(h, m):
     time_in = (h, m)
-    time_out = ((time_in[0]+8), time_in[1])
     current = (
         datetime.now(pytz.timezone('America/Los_Angeles')).hour,
         datetime.now(pytz.timezone('America/Los_Angeles')).minute
