@@ -85,4 +85,4 @@ UBRR0L = 0xC4
 UBRR0H = 0xC5
 UDR0 = 0xC6
 
-OFFSET = lambda reg: reg - 0x20 if reg < 0x60 else 0x5F
+OFFSET = lambda reg: reg - 0x20 if reg < 0x60 else "ERROR"
