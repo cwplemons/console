@@ -15,6 +15,11 @@
 #define DATA6 7
 #define DATA7 8
 
+#define TEST_REG 0x01
+#define TIMER1_REG 0x02
+#define TIMER2_REG 0x03
+
+
 void setup() {
   pinMode(IRQ, OUTPUT);
   pinMode(IC, OUTPUT);
