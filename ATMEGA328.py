@@ -86,22 +86,8 @@ UBRR0H = 0xC5
 UDR0 = 0xC6
 
 PROGMEM = list()
-
-def BIT(num = None): 
-  output = list()
-  if num != None:
-    for i in bin(num)[2:]:
-      output.append(int(i))
-      return output
-  else:
-    return [0 for i in range(8)]
   
 def BYTE(arr):
   return sum(map(lambda x: x[1] << x[0], enumerate(reversed(arr))))
-
-class BIT:
-  SHIFTL
-  SHIFTR
-  
 
 OFFSET = lambda reg: reg - 0x20 if reg < 0x60 else "ERROR"
